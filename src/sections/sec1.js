@@ -5,7 +5,7 @@ import "./sec1.css";
 
 function sec1() {
   return (
-    <div>
+    <div className="Sec1">
       <div className="navbar">
         <div className="logo">
           <img src={logo} />

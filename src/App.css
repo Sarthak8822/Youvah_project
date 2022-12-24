@@ -13,6 +13,24 @@
   }
 }
 
+.sec1 {
+  width: 1820px !important;
+  background-color: #fff5f1;
+  border-radius: 50px;
+}
+.sec2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .sec6 {
+  width: 1000px;
+} */
+
+.footer {
+  background: #f8fafe;
+  border-radius: 40px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
