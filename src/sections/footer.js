@@ -35,9 +35,15 @@ function footer() {
         <div className="components">Privacy Policy</div>
       </div>
       <div className="socials">
-        <img src={fb} />
-        <img src={twitter} />
-        <img src={instagram} />
+        <a href="www.facebook.com">
+          <img src={fb} />
+        </a>
+        <a href="www.twitter.com">
+          <img src={twitter} />
+        </a>
+        <a href="www.instagram.com">
+          <img src={instagram} />
+        </a>
       </div>
     </div>
   );

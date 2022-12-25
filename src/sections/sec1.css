@@ -16,6 +16,7 @@
   flex-direction: row;
 }
 .item {
+  text-decoration: none;
   width: 150px;
   font-family: "Axiforma", sans-serif;
   font-style: normal;
@@ -25,6 +26,7 @@
   color: #666680;
 }
 .button {
+  text-decoration: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -96,4 +98,5 @@
   color: #ffffff;
   background: #524fd5;
   border-radius: 73px;
+  text-decoration: none;
 }

@@ -51,11 +51,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 36px 56px;
-  /* gap: 10px; */
   width: 610px;
   height: 80px;
-  border: 1px solid rgba(176, 176, 192, 0.3);
   border-radius: 40px;
+}
+.component5 Accordion{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+    ;
 }
 .quests {
   width: 449px;
@@ -68,14 +72,32 @@
   color: #181b32;
 }
 .plus {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    background-color: #524FD5;;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #524fd5;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.answer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 36px 56px;
+  gap: 10px;
+
+  position: absolute;
+  width: 610px;
+  height: 294px;
+  left: 630px;
+  top: 399px;
+
+  /* Primary 200 */
+
+  background: #524fd5;
+  border-radius: 40px;
 }

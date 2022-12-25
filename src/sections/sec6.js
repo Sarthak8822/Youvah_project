@@ -11,7 +11,7 @@ function sec6() {
         <div className='forms'>
             <form>
                 <input className='input' type="email" placeholder="Enter your email..." />
-                <div className="button6">Send</div>
+                <a href="#" className="button6">Send</a>
             </form>
         </div>
     </div>

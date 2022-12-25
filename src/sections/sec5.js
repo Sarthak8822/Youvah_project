@@ -1,112 +1,129 @@
 import { useState, Fragment, useEffect } from "react";
-import "./style.css";
+// import "./style.css";
 import "./sec5.css";
-import FAQ from "./FAQ";
+import * as React from "react";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+// import FAQ from "./FAQ";
 
 function Sec5() {
-  const [faqs, setFaqs] = useState([
-    {
-      id: 0,
-      question: "How can I know my level of knowledge?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
-      open: false,
-    },
-    {
-      id: 1,
-      question: "Can I do it individually or only in a group?",
-      answer: "You! The viewer!",
-      open: false,
-    },
-    {
-      id: 2,
-      question: "Can I do it individually or only in a group?",
-      answer: "This many!",
-      open: false,
-    },
-    {
-      id: 3,
-      question: "Can I do it individually or only in a group?",
-      answer: "This many!",
-      open: false,
-    },
-    {
-      id: 4,
-      question: "Can I do it individually or only in a group?",
-      answer: "This many!",
-      open: false,
-    },
-    {
-      id: 5,
-      question: "Can I do it individually or only in a group?",
-      answer: "This many!",
-      open: false,
-    },
-  ]);
-  const toggleFAQ = (id) => {
-    setFaqs((prev) => {
-      const abc = prev.map((ele) => {
-        if (ele.id === id) {
-          ele.open = !ele.open;
-        }
-        return ele;
-      });
-      return [...abc];
-    });
-  };
-  useEffect(() => {
-    console.log(faqs);
-  }, [faqs]);
   return (
     <div className="sec5">
       <div className="texts5">
         <div className="key5">MORE INFO</div>
         <div className="teachers">Common questions</div>
       </div>
-      <section className="section5">
-        {faqs.map((ele) => (
-          <div className="component5" key={ele.id}>
-            <div className="quests">{ele.question}</div>
-            <div className="plus" onClick={() => toggleFAQ(ele.id)}>
-              +
-            </div>
-            {ele.open && <div className="answer">{ele.answer}</div>}
-          </div>
-        ))}
-      </section>
-      {/* <div className="section5"> */}
-      {/* {faqs.map((faq, index) => (
-          <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
-        ))} */}
-      {/* <div className="component5">
-          <div className="quests">How can I know my level of knowlwdge?</div>
-          <div className="plus" index= onClick={}>
-            +
-          </div>
+      <div className="section5">
+        <div className="component5">
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>How can I know my level of knowlwdge?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </div>
         <div className="component5">
-          <div className="quests">
-            Can I do it individually or only in a group?
-          </div>
-          <div className="plus">+</div>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>
+                Can I do it individually or only in a group?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                pharetra
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </div>
         <div className="component5">
-          <div className="quests">How can I know my level of knowlwdge?</div>
-          <div className="plus">+</div>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>
+                Are you adjusting to the student's schedule?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                jbachabjvb,anv jh
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </div>
         <div className="component5">
-          <div className="quests">How can I know my level of knowlwdge?</div>
-          <div className="plus">+</div>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>How can I know my level of knowlwdge?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex
+                dui. Integer id venenatis quam.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </div>
         <div className="component5">
-          <div className="quests">How can I know my level of knowlwdge?</div>
-          <div className="plus">+</div>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>What is the maximum group size?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                pharetra lorem eu dolor rhoncus, at scelerisque ligula
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </div>
         <div className="component5">
-          <div className="quests">How can I know my level of knowlwdge?</div>
-          <div className="plus">+</div>
-        </div> */}
-      {/* </div> */}
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>How can I know my level of knowlwdge?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </div>
+      </div>
     </div>
   );
 }

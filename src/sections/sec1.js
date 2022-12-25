@@ -11,14 +11,14 @@ function sec1() {
           <img src={logo} />
         </div>
         <div className="items">
-          <div className="item">Courses</div>
-          <div className="item">About Us</div>
-          <div className="item">Teachers</div>
-          <div className="item">Pricing</div>
-          <div className="item">Careers</div>
-          <div className="item">Blog</div>
+          <a href="#" className="item">Courses</a>
+          <a href="#" className="item">About Us</a>
+          <a href="#" className="item">Teachers</a>
+          <a href="#" className="item">Pricing</a>
+          <a href="#" className="item">Careers</a>
+          <a href="#" className="item">Blog</a>
         </div>
-        <div className="button">Get Started</div>
+        <a href="#"className="button">Get Started</a>
       </div>
       <div className="sec1">
         <div className="component">
@@ -26,7 +26,7 @@ function sec1() {
           <div className="minortext">
             Learn at your own pace, with lifetime access on mobile and desktop
           </div>
-          <div className="button1">Get Started</div>
+          <a href="#" className="button1">Get Started</a>
         </div>
         <div className="image">
           <img src={sec1image} />
