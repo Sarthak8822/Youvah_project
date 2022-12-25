@@ -1,0 +1,73 @@
+.sec3 {
+  display: flex;
+  flex-direction: column;
+}
+.texts3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+}
+.key3 {
+  width: 127px;
+  height: 34px;
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 190%;
+  text-transform: uppercase;
+  color: #b0b0c0;
+}
+.teachers {
+  width: 350px;
+  height: 62px;
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  color: #181b32;
+}
+.cards3 {
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card31 img {
+  width: 366.13px;
+  height: 417px;
+}
+.title3 {
+  width: 350px;
+  height: 86.48px;
+}
+.name {
+  width: 172px;
+  height: 36px;
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #181b32;
+}
+.country {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 300px;
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 190%;
+  color: #666680;
+}
+.country img {
+  width: 30px;
+  height: 30px;
+}
